@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #548587;
+    text-align: center;
+}
+
+h1 {
+    background: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.container {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.game {
+    height: 400px;
+    width: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    height: 120px;
+    width: 120px;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+    font-size: 8vmin;
+    color: #b0413e;
+    background: #ffffc7;
+}
+
+.color {
+    color: green;
+}
+
+#reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+    margin-bottom: 2rem;
+}
+
+.msg-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+#new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+}
+
+#msg {
+    color: #ffffc7;
+    font-size: 35px;
+}
+
+.hide {
+    display: none;
+}
+
+/* Responsiveness */
+
+@media (max-width: 500px) {
+
+    .box {
+        height: 110px;
+        width: 110px;
+    }
+
+    .game {
+        height: 380px;
+        gap: 15px;
+    }
+
+    #msg {
+        font-size: 30px;
+    }
+
+    .msg-container {
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .box {
+        height: 100px;
+        width: 100px;
+    }
+
+    .game {
+        height: 350px;
+    }
+
+    #reset-btn {
+        margin-top: -1rem;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .box {
+        height: 90px;
+        width: 90px;
+    }
+
+    .game {
+        height: 300px;
+        width: 300px;
+        gap: 15px;
+    }
+
+    #reset-btn {
+        margin-top: -1.5rem;
+    }
+
+    #msg {
+        font-size: 25px;
+    }
+
+    #new-btn {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .box {
+        height: 80px;
+        width: 80px;
+    }
+
+    .game {
+        height: 280px;
+        gap: 10px;
+    }
+}
